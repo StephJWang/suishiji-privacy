@@ -31,6 +31,15 @@ a:focus-visible { outline: 3px solid var(--red); outline-offset: 5px; border-rad
 .brand-name { display: block; width: 3.24em; height: 1.3em; object-fit: contain; object-position: left center; }
 .seal { width: 43px; height: 43px; display: block; flex-shrink: 0; object-fit: contain; border-radius: 9px; }
 .language-nav { display: flex; gap: 20px; align-items: center; font-size: 14px; }
+.chinese-switch { position: relative; }
+.chinese-switch summary { color: var(--red); cursor: pointer; list-style: none; text-decoration: underline; text-underline-offset: .2em; white-space: nowrap; }
+.chinese-switch summary::-webkit-details-marker { display: none; }
+.chinese-switch summary::after { content: "▾"; display: inline-block; margin-left: 5px; font-size: .8em; }
+.chinese-switch summary:focus-visible { outline: 3px solid var(--red); outline-offset: 5px; border-radius: 2px; }
+.chinese-menu { position: absolute; top: calc(100% + 8px); right: 0; z-index: 10; min-width: 128px; padding: 5px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 5px 16px #29272216; }
+.chinese-menu a { display: block; padding: 7px 12px; white-space: nowrap; text-decoration: none; border-radius: 3px; }
+.chinese-menu a:hover, .chinese-menu a:focus-visible { background: var(--soft-red); }
+.chinese-menu a[aria-current="page"] { font-weight: 650; }
 .page-shell { max-width: 940px; margin: 0 auto; padding: 58px 40px 68px; }
 .page-intro { padding-bottom: 36px; }
 .eyebrow { color: var(--red); font-size: 11px; letter-spacing: .22em; font-weight: 650; margin: 0 0 10px; }
