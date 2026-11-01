@@ -28,7 +28,8 @@ a:focus-visible { outline: 3px solid var(--red); outline-offset: 5px; border-rad
 .header-inner { max-width: 1032px; margin: 0 auto; padding: 24px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 13px; text-decoration: none; color: var(--ink); font-family: "Songti SC", SimSun, "Noto Serif CJK SC", serif; font-size: 22px; font-weight: 600; letter-spacing: .08em; line-height: 1.3; }
 .brand-en { display: block; margin-top: 4px; font-family: system-ui, sans-serif; font-size: 9px; font-weight: 500; letter-spacing: .25em; color: var(--muted); }
-.seal { width: 43px; height: 43px; display: grid; place-items: center; color: var(--paper); background: var(--red); border-radius: 9px; font-size: 28px; line-height: 1; }
+.brand-name { display: block; width: 3.24em; height: 1.3em; object-fit: contain; object-position: left center; }
+.seal { width: 43px; height: 43px; display: block; flex-shrink: 0; object-fit: contain; border-radius: 9px; }
 .language-nav { display: flex; gap: 20px; align-items: center; font-size: 14px; }
 .page-shell { max-width: 940px; margin: 0 auto; padding: 58px 40px 68px; }
 .page-intro { padding-bottom: 36px; }
@@ -56,6 +57,7 @@ p { margin: 0 0 17px; overflow-wrap: anywhere; }
 .policy-section { margin: 31px 0; }
 .policy-section h3 { margin: 0 0 13px; font-size: 19px; font-weight: 650; line-height: 1.6; }
 article[lang="en"] { line-height: 1.85; }
+article[lang="en"] > h2 { font-family: inherit; font-weight: 650; }
 article[lang="en"] .policy-section h3 { font-size: 19px; }
 .site-footer { border-top: 1px solid var(--line); padding: 28px 40px 38px; color: var(--muted); font-size: 12px; }
 .site-footer > div { max-width: 860px; margin: auto; }
@@ -64,7 +66,7 @@ article[lang="en"] .policy-section h3 { font-size: 19px; }
 @media (max-width: 640px) {
   .header-inner { padding: 18px 22px; gap: 12px; }
   .brand { font-size: 20px; gap: 10px; }
-  .seal { width: 38px; height: 38px; font-size: 26px; }
+  .seal { width: 38px; height: 38px; }
   .language-nav { gap: 14px; font-size: 13px; }
   .page-shell { padding: 35px 22px 40px; }
   .page-intro { padding-bottom: 27px; }
