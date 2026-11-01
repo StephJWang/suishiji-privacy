@@ -1,0 +1,88 @@
+:root {
+  color-scheme: light;
+  --paper: #f7f3ec;
+  --surface: #fffdf9;
+  --ink: #292722;
+  --muted: #70695e;
+  --line: #dfd8cc;
+  --red: #b92e34;
+  --soft-red: #f6e8e5;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 6rem; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  -webkit-text-size-adjust: 100%;
+}
+a { color: var(--red); text-underline-offset: .2em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--red); outline-offset: 5px; border-radius: 2px; }
+.skip-link { position: absolute; z-index: 5; top: -8rem; left: 1rem; padding: .6rem 1rem; background: var(--surface); }
+.skip-link:focus { top: 1rem; }
+.site-header { border-bottom: 1px solid var(--line); background: var(--paper); }
+.header-inner { max-width: 1032px; margin: 0 auto; padding: 24px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: inline-flex; align-items: center; gap: 13px; text-decoration: none; color: var(--ink); font-family: "Songti SC", SimSun, "Noto Serif CJK SC", serif; font-size: 22px; font-weight: 600; letter-spacing: .08em; line-height: 1.3; }
+.brand-en { display: block; margin-top: 4px; font-family: system-ui, sans-serif; font-size: 9px; font-weight: 500; letter-spacing: .25em; color: var(--muted); }
+.seal { width: 43px; height: 43px; display: grid; place-items: center; color: var(--paper); background: var(--red); border-radius: 9px; font-size: 28px; line-height: 1; }
+.language-nav { display: flex; gap: 20px; align-items: center; font-size: 14px; }
+.page-shell { max-width: 940px; margin: 0 auto; padding: 58px 40px 68px; }
+.page-intro { padding-bottom: 36px; }
+.eyebrow { color: var(--red); font-size: 11px; letter-spacing: .22em; font-weight: 650; margin: 0 0 10px; }
+h1, h2, h3 { color: var(--ink); text-wrap: pretty; }
+h1 { margin: 0; font-family: "Songti SC", SimSun, Georgia, serif; font-size: clamp(35px, 7vw, 48px); font-weight: 600; letter-spacing: .025em; line-height: 1.35; }
+.subtitle { margin: 13px 0 25px; color: var(--muted); font-size: 16px; }
+.meta { display: flex; gap: 15px 44px; flex-wrap: wrap; margin: 0; font-size: 14px; }
+.meta div { min-width: 130px; }
+.meta dt { color: var(--muted); font-size: 12px; }
+.meta dd { margin: 2px 0 0; }
+.policy { padding: 36px 0 12px; border-top: 1px solid var(--line); }
+.policy + .policy { margin-top: 52px; }
+.language-label { display: inline-block; color: var(--red); font-size: 12px; letter-spacing: .07em; border: 1px solid #d9b5b2; padding: 3px 12px; border-radius: 20px; margin-bottom: 14px; }
+h2 { margin: 0 0 24px; font-family: "Songti SC", SimSun, Georgia, serif; font-size: clamp(25px, 5vw, 31px); font-weight: 600; line-height: 1.55; }
+p { margin: 0 0 17px; overflow-wrap: anywhere; }
+.summary { background: var(--surface); border-left: 3px solid var(--red); padding: 22px 25px; margin: 28px 0; }
+.summary strong { display: block; font-size: 14px; color: var(--red); margin-bottom: 6px; }
+.summary p { margin: 0; font-size: 15px; }
+.contents { border: 1px solid var(--line); border-radius: 6px; padding: 21px 25px; margin: 28px 0 40px; }
+.contents h3 { margin: 0 0 10px; font-size: 14px; }
+.contents ol { columns: 2; list-style: none; padding: 0; margin: 0; column-gap: 28px; }
+.contents li { font-size: 13px; break-inside: avoid; padding: 4px 0; line-height: 1.6; }
+.contents a { color: var(--muted); }
+.policy-section { margin: 31px 0; }
+.policy-section h3 { margin: 0 0 13px; font-size: 19px; font-weight: 650; line-height: 1.6; }
+article[lang="en"] { line-height: 1.85; }
+article[lang="en"] .policy-section h3 { font-size: 19px; }
+.site-footer { border-top: 1px solid var(--line); padding: 28px 40px 38px; color: var(--muted); font-size: 12px; }
+.site-footer > div { max-width: 860px; margin: auto; }
+.site-footer p { margin-bottom: 4px; }
+.site-footer a { display: inline-block; margin-top: 4px; }
+@media (max-width: 640px) {
+  .header-inner { padding: 18px 22px; gap: 12px; }
+  .brand { font-size: 20px; gap: 10px; }
+  .seal { width: 38px; height: 38px; font-size: 26px; }
+  .language-nav { gap: 14px; font-size: 13px; }
+  .page-shell { padding: 35px 22px 40px; }
+  .page-intro { padding-bottom: 27px; }
+  .meta { gap: 12px 22px; }
+  .policy { padding-top: 27px; }
+  .contents { padding: 17px 19px; }
+  .contents ol { columns: 1; }
+  .summary { padding: 18px 20px; }
+  .site-footer { padding: 24px 22px 30px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  body { background: #fff; color: #111; font-size: 11pt; }
+  .site-header, .skip-link, .contents, .language-nav, .site-footer { display: none; }
+  .page-shell { max-width: none; padding: 0; }
+  .page-intro { padding-bottom: 20px; }
+  .policy + .policy { break-before: page; }
+  .summary { background: #fff; border: 1px solid #aaa; }
+  h2, h3 { break-after: avoid; }
+  a { color: #111; }
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stephjwang.github.io/suishiji-privacy/sitemap.xml
