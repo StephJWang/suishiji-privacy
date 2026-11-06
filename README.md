@@ -26,11 +26,11 @@ Save. GitHub Pages publishes these static files directly. No dependencies, build
 
 ## 维护 / Maintenance
 
-政策反映的是 2026-11-01 核对的应用行为，当前内测版尚未启用真实购买。
-启用购买、添加 SDK 或改变数据处理前，应复核政策；修改正文时同步更新两个中文版本、英文、对应 HTML、Markdown 和更新日期。繁体版沿用大陆用语，只改变字形；通过右上角中文下拉菜单切换，不在同一页面叠加第三份正文。
+政策反映的是 2026-11-06 核对的应用行为，包括 Google Play 一次性购买、恢复购买、本地凭证和审核授权。
+添加 SDK 或改变数据处理前，应复核政策；修改正文时同步更新两个中文版本、英文、对应 HTML、Markdown 和更新日期。繁体版沿用大陆用语，只改变字形；通过右上角中文下拉菜单切换，不在同一页面叠加第三份正文。
 
-The policy reflects App behavior reviewed on 2026-11-01. Real purchases are not enabled in the current internal-testing build.
-Review the policy before enabling purchases, adding SDKs or changing data practices. Keep both Chinese script variants, English, HTML pages, Markdown texts and dates aligned. The Chinese dropdown uses static links, without JavaScript or cookies.
+The policy reflects App behavior reviewed on 2026-11-06, including Google Play one-time purchases, purchase restoration, local purchase records and review authorization.
+Review the policy before adding SDKs or changing data practices. Keep both Chinese script variants, English, HTML pages, Markdown texts and dates aligned. The Chinese dropdown uses static links, without JavaScript or cookies.
 
 网页本身不加载第三方脚本、远程字体、广告或统计工具；GitHub Pages 的托管日志仍按 GitHub 政策处理。
 The website loads no third-party scripts, remote fonts, ads or analytics. GitHub Pages hosting logs remain subject to GitHub's policies.
